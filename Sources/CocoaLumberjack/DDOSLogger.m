@@ -28,6 +28,7 @@
 - (os_log_type_t)osLogTypeForLogFlag:(DDLogFlag)logFlag {
     switch (logFlag) {
         case DDLogFlagError:
+            return OS_LOG_TYPE_FAULT;
         case DDLogFlagWarning:
             return OS_LOG_TYPE_ERROR;
         case DDLogFlagInfo:
